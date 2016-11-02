@@ -22,9 +22,14 @@ Or install it yourself as:
 
 ## Code Example
 
+To Return All Business Data
 ``` ruby
-business = ChiBusinessOwners::Business.new
-business.all
+p ChiBusinessOwners::Business.all
+```
+
+To Return Data matching search attributes
+``` ruby
+p ChiBusinessOwners::Business.where({account_number: 61, owner_last_name: "kelly"})
 ```
 
 ## Development
