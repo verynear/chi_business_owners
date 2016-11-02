@@ -26,7 +26,7 @@ module ChiBusinessOwners
 
 	  private
 
-	  def convert_array_to_objects(business_array)
+	  def self.convert_array_to_objects(business_array)
 	  	collection = []
 	  	business_array.each do |business_hash|
 	  		collection << Business.new(business_hash)
@@ -34,7 +34,7 @@ module ChiBusinessOwners
 	  	collection
 	  end
 
-	  def convert_search_hash_to_string(search_hash)
+	  def self.convert_search_hash_to_string(search_hash)
 	  	search_array = []
 	  	search_hash.each do |key, value|
 	  		search_array << "#{key}=#{value}"
