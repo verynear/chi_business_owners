@@ -7,9 +7,9 @@ module ChiBusinessOwners
 
 	  def initialize(business_hash)
 	  	@account_number = business_hash["account_number"]
-	  	@dba_name = business_hash["doing_business_as_name"]
-	  	@first_name = business_hash["owner_first_name"]
-	  	@last_name = business_hash["owner_last_name"]
+	  	@doing_business_as_name = business_hash["doing_business_as_name"]
+	  	@owner_first_name = business_hash["owner_first_name"]
+	  	@owner_last_name = business_hash["owner_last_name"]
 	  	@owner_title = business_hash["owner_title"]
 	  end
 
